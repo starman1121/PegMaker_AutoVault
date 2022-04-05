@@ -34,7 +34,7 @@ const fetchTokens = async () => {
   const cacheBuster = getApiCacheBuster();
 
   try {
-    const response = await axios.get(`http://localhost:3000/prices?_=${cacheBuster}`);
+    const response = await axios.get(`https://autovaultapi.herokuapp.com/prices?_=${cacheBuster}`);
     return response.data;
   } catch (err) {
     console.error(err);
@@ -46,7 +46,7 @@ const fetchLPs = async () => {
   const cacheBuster = getApiCacheBuster();
 
   try {
-    const response = await axios.get(`http://localhost:3000/lps?_=${cacheBuster}`);
+    const response = await axios.get(`https://autovaultapi.herokuapp.com/lps?_=${cacheBuster}`);
     return response.data;
   } catch (err) {
     console.error(err);

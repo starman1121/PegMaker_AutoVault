@@ -78,7 +78,7 @@ const Footer = () => {
         </a>
 
         <a
-          href="https://www.bomb.farm"
+          href="https://www.maker.farm"
           target="_blank"
           rel="noopener noreferrer"
           className={classes.link}

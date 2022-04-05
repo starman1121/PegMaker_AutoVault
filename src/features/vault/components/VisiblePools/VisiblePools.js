@@ -41,7 +41,7 @@ const VisiblePools = ({
   return (
     <>
       {/*
-        Remove filter for now. We only have two vaults in bomb.farm
+        Remove filter for now. We only have two vaults in maker.farm
 
         <Filters
         toggleFilter={toggleFilter}

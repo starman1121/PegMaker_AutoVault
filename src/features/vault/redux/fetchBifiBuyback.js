@@ -16,7 +16,7 @@ export function fetchBifibuyback() {
 
     return new Promise((resolve, reject) => {
       const cacheBuster = getApiCacheBuster();
-      const doRequest = axios.get(`http://localhost:3000/bifibuyback?_=${cacheBuster}`);
+      const doRequest = axios.get(`https://autovaultapi.herokuapp.com/bifibuyback?_=${cacheBuster}`);
 
       doRequest.then(
         res => {

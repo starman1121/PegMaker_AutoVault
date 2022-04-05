@@ -16,7 +16,7 @@ export function fetchApys() {
 
     return new Promise((resolve, reject) => {
       const cacheBuster = getApiCacheBuster();
-      const doRequest = axios.get(`http://localhost:3000/apy/breakdown?_=${cacheBuster}`);
+      const doRequest = axios.get(`https://autovaultapi.herokuapp.com/apy/breakdown?_=${cacheBuster}`);
 
       doRequest.then(
         res => {

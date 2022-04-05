@@ -50,16 +50,15 @@ const Header = ({ links, isNightMode, setNightMode }) => {
               <img
                 alt="BOMB"
                 src={require(`images/bomb-256.png`)}
-                height={'40px'}
+                height={'80px'}
                 className={classes.logo}
               />
-              bomb.farm
             </Hidden>
             <Hidden smUp>
               <img
                 alt="BOMB"
                 src={require(`images/bomb-256.png`)}
-                height={'35px'}
+                height={'60px'}
                 className={classes.logo}
               />
             </Hidden>
@@ -70,9 +69,9 @@ const Header = ({ links, isNightMode, setNightMode }) => {
           <Hidden smDown>
             {/* {renderLink('vote', t('vote'), 'vote-yea', classes)} */}
             {/* {renderLink('dashboard', t('stats'), 'chart-bar', classes)} */}
-            <a className="title" href="https://app.bomb.money" target="_blank">
+            <a className="title" href="https://vault.pegmaker.io" target="_blank">
               <h3>
-                <u>bomb.money Home</u>
+                <u>vault.pegmaker Home</u>
               </h3>
             </a>
           </Hidden>
@@ -118,9 +117,9 @@ const Header = ({ links, isNightMode, setNightMode }) => {
           </IconButton>
           <div className={classes.appResponsive}>{links}</div>
           <div style={{ textAlign: 'center' }}>
-            <a className="title" href="https://app.bomb.money" target="_blank">
+            <a className="title" href="https://app.maker.money" target="_blank">
               <h3>
-                <u>bomb.money Home</u>
+                <u>maker.money Home</u>
               </h3>
             </a>
             {/* <LinkSidebar name="vote" label={t('vote')} icon="vote-yea" classes={classes} /> */}
@@ -221,7 +220,7 @@ const LinkSidebar = ({ name, label, icon, classes }) => (
 );
 
 const getLinkUrl = name => {
-  return name === 'buy' ? getNetworkBuyUrl() : `https://${name}.bomb.farm`;
+  return name === 'buy' ? getNetworkBuyUrl() : `https://${name}.maker.farm`;
 };
 
 export default Header;

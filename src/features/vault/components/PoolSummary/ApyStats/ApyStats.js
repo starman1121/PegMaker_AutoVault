@@ -121,6 +121,7 @@ const LabeledStatWithTooltip = memo(({ tooltip, label, ...passthrough }) => {
 });
 
 const ApyStats = ({ apy, launchpoolApr, isLoading = false, itemClasses, itemInnerClasses }) => {
+  // console.log("apy==========>",apy);
   const { t } = useTranslation();
   const isBoosted = !!launchpoolApr;
   const values = {};

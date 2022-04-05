@@ -18,13 +18,8 @@ const Disclaimer = () => {
         {t('Disclaimer')}
         <br />
         <br />
-        BOMB was not effected by any exploits.{' '}
-        <a
-          target="_blank"
-          href="https://medium.com/@bombbshare/dec-18-quick-update-regarding-grim-exploit-4f1a0c989fba"
-        >
-          Read more here
-        </a>
+        PEGMAKER was not effected by any exploits.{' '}
+        
       </Typography>
     </Grid>
   );
